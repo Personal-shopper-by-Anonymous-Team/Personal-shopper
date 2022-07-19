@@ -25,8 +25,8 @@
             $this->name = $name;    
             $this->age = $age;
             $this->phone = $phone;
-            $this->weigth = $weight;
-            $this->heigth = $height;
+            $this->weight = $weight;
+            $this->height = $height;
             $this->shoes_size = $shoes_size;
             $this->sex = $sex;
             $this->date = $date;
@@ -51,4 +51,40 @@
 
 
         }
-    }
+        public function getId(){
+            return $this->id;
+         }
+         public function getName(){
+            return $this ->name;
+         }
+         public function getAge(){
+            return $this->age;
+         }
+         public function getPhone(){
+            return $this->phone;
+            }
+            public function getWeight(){
+                return $this->weight;
+             }
+             public function getHeight(){
+                return $this->height;
+             }
+             public function getShoes_Size(){
+                return $this->shoes_size;
+             }
+             public function getSex(){
+                return $this->sex;
+             }
+             public function getDate(){
+                return $this->date;
+             }
+             public function getReason(){
+                return $this->reason;
+            }
+
+            }
+
+
+         
+         
+    
