@@ -8,6 +8,12 @@
     class CustomersController{
 
         public function __construct(){
+
+            if (isset($_GET["action"]) && ($_GET["action"] =="delete")){
+                $this->delete($_GET["id"]);
+                return;
+            }
+
             $this->index();
         }
 
@@ -19,6 +25,14 @@
              new View("customerList",["customer"=> $customers]);
         
          }
+
+        public function delete($id){
+            $customerHelper = new Customers();
+            $customer = $customerHelper->findById($id);
+            $customer = destroy();
+
+            $this->index();
+        } 
 
 
     }
