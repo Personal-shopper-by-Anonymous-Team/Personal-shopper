@@ -11,6 +11,12 @@
     <main>
             <h1>Personal Shopper </h1>
 
+            <div class="card-header py-3 mb-5">
+                <a href="?action=create">
+                    <button type="button" class="btn btn-outline-dark">ADD</button>
+                </a>
+            </div>
+
         
 
         <table class="table">

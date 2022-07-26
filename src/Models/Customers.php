@@ -86,7 +86,7 @@
             public function findById($id){
                $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}");
                $result = $query->fetchAll();
-               return new Customers($result[0]["id"], $result[0]["name"], $result[0]["age"], $result[0]["phone"], $result[0]["weight"], $result[0]["height"], $result[0]["shoe_size"], $result[0]["sex"], $result[0]["date"], $result[0]["reason"]);
+               return new Customers($result[0]["id"], $result[0]["name"], $result[0]["age"], $result[0]["phone"], $result[0]["weight"], $result[0]["height"], $result[0]["shoes_size"], $result[0]["sex"], $result[0]["date"], $result[0]["reason"]);
             }
 
             public function destroy(){

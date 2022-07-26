@@ -14,6 +14,11 @@
                 return;
             }
 
+            if (isset($_GET["action"]) && ($_GET["action"] =="create")){
+                $this->create();
+                return;
+            }    
+
             $this->index();
         }
 
@@ -29,10 +34,14 @@
         public function delete($id){
             $customerHelper = new Customers();
             $customer = $customerHelper->findById($id);
-            $customer = destroy();
+            $customer->destroy();
 
             $this->index();
         } 
+
+        public function create(){
+            new View("createCustomer");
+        }
 
 
     }
