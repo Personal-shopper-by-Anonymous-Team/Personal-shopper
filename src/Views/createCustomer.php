@@ -1,22 +1,11 @@
-<<<<<<< HEAD
-<?php 
-require_once ("Components/Layout.php"); 
-require_once ("Components/Header.php");
-
-?>                  
-    <link rel="stylesheet" href="../Assets/createCustomer.css">
-=======
 <?php
 require_once("Components/Layout.php");
 require_once("Components/Header.php");
 ?>
->>>>>>> 5de1e037fe46ccac66f0d2bbda0a7a463df497f1
+
 
     <body>
-    <div> 
-        <h1 class="d-flex justify-content-center">Add shopper</h1>
-    </div>    
-    <a class="d-flex justify-content-end" href="?action=create"><input id="clearform" class="btn btn-primary clearform" type="reset" value="RESET"></a>
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         <form>
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
@@ -65,19 +54,14 @@ require_once("Components/Header.php");
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
 
-<<<<<<< HEAD
+
         </form>
         <div class="d-grid gap-2 d-md-inline-block d-flex justify-items-center ">git 
   <button id="send" class="btn btn-outline-dark" type="button">Send</button>
   <button id="cancel" class="btn btn-outline-dark" type="button">Cancel</button>
 </div>
-=======
-    </form>
-    <div class="d-grid gap-2 d-md-inline-block">
-        <button class="btn btn-outline-info" type="button">Send</button>
-        <button class="btn btn-outline-danger" type="button">Cancel</button>
-    </div>
->>>>>>> 5de1e037fe46ccac66f0d2bbda0a7a463df497f1
+
+    
 
     <?php
     require_once("Components/Footer.php");
