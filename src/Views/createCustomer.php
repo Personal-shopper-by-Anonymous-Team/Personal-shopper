@@ -56,7 +56,7 @@ require_once("Components/Header.php");
 
 
         </form>
-        <div class="d-grid gap-2 d-md-inline-block d-flex justify-items-center ">git 
+        <div class="d-grid gap-2 d-md-inline-block d-flex justify-items-center ">
   <button id="send" class="btn btn-outline-dark" type="button">Send</button>
   <button id="cancel" class="btn btn-outline-dark" type="button">Cancel</button>
 </div>

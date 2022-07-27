@@ -1,1 +1,1 @@
-<div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-fluid bg-warning bg-gradient">Derechos Reservados</div>
