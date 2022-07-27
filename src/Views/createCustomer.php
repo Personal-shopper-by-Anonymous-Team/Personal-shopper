@@ -3,7 +3,6 @@ require_once("Components/Layout.php");
 require_once("Components/Header.php");
 ?>
 
-
     <body>
     <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         <form>
@@ -56,9 +55,9 @@ require_once("Components/Header.php");
 
 
         </form>
-        <div class="d-grid gap-2 d-md-inline-block d-flex justify-items-center ">
+        <div class="justify-content-center">
   <button id="send" class="btn btn-outline-dark" type="button">Send</button>
-  <button id="cancel" class="btn btn-outline-dark" type="button">Cancel</button>
+  <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="submit">Cancel</button>
 </div>
 
     
