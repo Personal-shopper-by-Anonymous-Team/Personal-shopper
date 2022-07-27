@@ -3,9 +3,15 @@ require_once("Components/Layout.php");
 require_once("Components/Header.php");
 ?>
 
+<<<<<<< HEAD
 <body>
     <input class="btn btn-primary" type="reset" value="Reset">
     <form>
+=======
+    <body>
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
+        <form>
+>>>>>>> ab07d9c99aa534a329d99c267754f84fc1f10e62
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
