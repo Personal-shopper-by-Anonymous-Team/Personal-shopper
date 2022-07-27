@@ -4,7 +4,7 @@ require_once ("Components/Header.php");
 ?>
 
     <body>
-    <input class="btn btn-primary" type="reset" value="Reset">
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         <form>
         <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Name</label>
