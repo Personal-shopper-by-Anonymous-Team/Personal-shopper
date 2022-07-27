@@ -1,0 +1,1 @@
+<div class="container-sm">100% wide until small breakpoint</div>
