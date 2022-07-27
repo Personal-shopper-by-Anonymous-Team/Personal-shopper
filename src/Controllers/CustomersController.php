@@ -28,10 +28,11 @@
 
              $customers = $customer->all();
              new View("customerList",["customer"=> $customers]);
-        
+        }
   
          
-
+        
+             
         public function delete($id){
             $customerHelper = new Customers();
             $customer = $customerHelper->findById($id);
@@ -46,4 +47,3 @@
 
 
     }
-}
