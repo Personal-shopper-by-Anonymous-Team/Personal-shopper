@@ -53,12 +53,15 @@ require_once("Components/Header.php");
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
 
-
-        </form>
         <div class="justify-content-center">
   <button id="send" class="btn btn-outline-dark" type="button">Send</button>
   <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="submit">Cancel</button>
 </div>
+
+
+
+        </form>
+        
 
     
 
