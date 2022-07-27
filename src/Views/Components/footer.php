@@ -1,0 +1,1 @@
+<div class="container-fluid bg-warning bg-gradient">Derechos Reservados</div>

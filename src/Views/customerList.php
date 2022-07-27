@@ -10,10 +10,16 @@
        ?>
     <main>
 
-  <section class="">
-   <div class="add">
-     <i class="bi bi-person-lines-fill"></i>
-     <button class="btn_add">ADD</button>
+            <section class="">
+              <div class="add">
+              
+              <a href="?action=create">
+                <i class="bi bi-person-lines-fill"></i>
+                <button type="button" class="btn_add">ADD</button>
+              </a>
+            </div>
+
+        
 
 
    </div>
