@@ -4,10 +4,7 @@ require_once("Components/Header.php");
 ?>
 
     <body>
-    <div> 
-        <h1 class="d-flex justify-content-center">Add shopper</h1>
-    </div>    
-    <a class="d-flex justify-content-end" href="?action=create"><input id="clearform" class="btn btn-primary clearform" type="reset" value="RESET"></a>
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         <form>
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
@@ -64,8 +61,6 @@ require_once("Components/Header.php");
 </div>
 
     
-    
-
 
     <?php
     require_once("Components/Footer.php");
