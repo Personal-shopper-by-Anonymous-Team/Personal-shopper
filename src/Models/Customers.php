@@ -81,7 +81,6 @@
              public function getReason(){
                 return $this->reason;
             }
-
             }
 
 

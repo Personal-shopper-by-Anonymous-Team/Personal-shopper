@@ -9,67 +9,70 @@
         require_once("Components/header.php.");
        ?>
     <main>
-            <h1>Personal Shopper </h1>
 
-        
+  <section class="">
+   <div class="add">
+     <i class="bi bi-person-lines-fill"></i>
+     <button class="btn_add">ADD</button>
 
-        <table class="table">
-    <thead>
-            <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Weight</th>
-            <th scope="col">Height</th>
-            <th scope="col">Shoe Size</th>
-            <th scope="col">Sex</th>
-            <th scope="col">Date</th>
-            <th scope="col">Reason</th>
-            </tr>
-     </thead>
-    <tbody>
+
+   </div>
+   <img> 
+
+  </section>
         <?php 
-             foreach ($data ["customer"] as $customer){
+                    foreach ($data ["customer"] as $customer){
 
-              echo "
-                 <tr>
-                    <td>{$customer->getId()}</td>
-                    <td>{$customer->getName()}</td> 
-                    <td>{$customer->getAge()}</td> 
-                    <td>{$customer->getPhone()}</td>
-                    <td>{$customer->getWeight()}</td>
-                    <td>{$customer->getHeight()}</td>
-                    <td>{$customer->getShoes_Size()}</td>
-                    <td>{$customer->getSex()}</td>
-                    <td>{$customer->getDate()}</td>
-                    <td>{$customer->getReason()}</td>
-                    <td>
-                        <a href= '?action=delete&id={$customer->getId()}'>🗑️</a>
-                        <td>
-                        <a href= '?action=edit&id={$customer->getId()}'>🗑️</a>
-                    </td>
-                    </td>
-                 </tr>
-                 ";
+                      echo <<<TAG
 
+
+
+                <div class="container_cards "> 
+                    
+                              
+                  <div class="card border-danger mb-3 card_principal" style="max-width: 54rem;">
+
+                            <div class="card text-bg-secondary mb-3 card_secondary  " style="">
+
+                                      <li class="list-group-item">Name: {$customer->getName()}</li>
+                                      <li class="list-group-item">Age: {$customer->getAge()}</li>
+                                      <li class="list-group-item">Phone: {$customer->getPhone()}</li>
+                                      <li class="list-group-item">Weight: {$customer->getWeight()}</li>
+                                      <li class="list-group-item">Height: {$customer->getHeight()}</li>
+                                      <li class="list-group-item">Shoe Size: {$customer->getShoes_Size()}</li>
+                                            
+                            </div>
+
+                            <div class="card text-bg-secondary mb-3 card_secondary" style="width: 25rem;">
+                                          <li class="list-group-item">Sex: {$customer->getSex()}</li>
+                                          <li class="list-group-item">Date: {$customer->getDate()}</li>
+                                          <li class="list-group-item">Reason: {$customer->getReason()}</l
+                             </div>
+
+                            
+                  </div>
+                          <div class="buttons" style="max-width: 18rem;">
+                                    <a class="btn_delete" href= '?action=delete&id={$customer->getId()}'><i class="bi bi-person-dash icon_delete"></i></a>
+                                    <a class="btn_edit" href= '?action=edit&id={$customer->getId()}'><i class="bi bi-pencil-square icon_edit"></i></a>
+                        </div>
+                 </div>
+       
+                              
                 
-             
-
-             }
-         ?>
-   
-  </tbody>
-</table>
- 
 
 
+                        
+                TAG;
 
+                        
+                    
 
-
-
-
-    </main>
+                    }
+      ?>
+                
+            
+     
+     </main>
            
            <?php
             require_once("Components/footer.php");
