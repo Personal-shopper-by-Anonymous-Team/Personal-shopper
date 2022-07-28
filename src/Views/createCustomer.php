@@ -1,6 +1,6 @@
 <?php
 require_once("Components/Layout.php");
-require_once("Components/Header.php");
+require_once("Components/header/header_add.php");
 ?>
 
     <body>
@@ -73,6 +73,6 @@ require_once("Components/Header.php");
     
 
     <?php
-    require_once("Components/Footer.php");
+    require_once("Components/footer/footer_add.php");
     ?>
 </body>

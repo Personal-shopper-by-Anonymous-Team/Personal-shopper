@@ -6,7 +6,7 @@
     
     <body>
        <?php
-        require_once("Components/header.php.");
+        require_once("Components/header/header.php");
        ?>
     <main>
 
@@ -81,7 +81,7 @@
      </main>
            
            <?php
-            require_once("Components/footer.php");
+            require_once("Components/footer/footer.php");
             ?>
     </body>
 
