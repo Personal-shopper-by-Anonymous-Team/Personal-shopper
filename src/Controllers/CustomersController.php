@@ -28,6 +28,7 @@
 
              $customers = $customer->all();
              new View("customerList",["customer"=> $customers]);
+        }
         
   
          
@@ -46,4 +47,3 @@
 
 
     }
-}

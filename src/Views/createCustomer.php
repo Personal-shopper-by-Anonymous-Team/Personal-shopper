@@ -4,6 +4,8 @@ require_once("Components/Header.php");
 ?>
 
     <body>
+        
+
     <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         <form>
         <div class="mb-3">
@@ -55,12 +57,12 @@ require_once("Components/Header.php");
 
 
         </form>
-        <div class="justify-content-center">
-  <button id="send" class="btn btn-outline-dark" type="button">Send</button>
-  <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="submit">Cancel</button>
-</div>
+         <div class="justify-content-center">
+            <button id="send" class="btn btn-outline-dark" type="button">Send</button>
+            <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="submit">Cancel</button>
+        </div>
 
-    
+
 
     <?php
     require_once("Components/Footer.php");

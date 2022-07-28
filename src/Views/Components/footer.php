@@ -1,1 +1,1 @@
-<div class="container-fluid bg-warning bg-gradient">Derechos Reservados</div>
+<div class="footer_all" id="footer_list">Derechos Reservados por Anonymus Code.</div>

@@ -1,5 +1,9 @@
-#nav {
-    background-color: black;
-   
-    margin-bottom: 2rem;
+
+.img_header{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.header_all{
+    background-color:#CB6555;
 }

@@ -1,8 +1,7 @@
-<nav class="navbar bg-warning bg-gradientgit">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
+
+    <div class="container-fluid header_all">
+    
+      <img src="src/img/zyro-image 1.png" alt="image_header" class="d-inline-block align-text-top img_header">
+    
     </a>
   </div>
-</nav>
