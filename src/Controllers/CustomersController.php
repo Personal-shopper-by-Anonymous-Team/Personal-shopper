@@ -26,7 +26,7 @@
                 $this->update($_POST, $_GET["id"]);
                 return;
             }
-        
+            
             
             if (isset($_GET["action"]) && ($_GET["action"] =="store")){
                 $this->store($_POST);
