@@ -5,7 +5,7 @@ require_once("Components/header/header_add.php");
 
     <body>
         
-    <input id="reset" class="btn btn-outline-dark" type="reset" value="reset" />
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a
         
 
 
