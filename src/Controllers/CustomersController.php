@@ -26,7 +26,7 @@
                 $this->update($_POST, $_GET["id"]);
                 return;
             }
-        
+            
             
             if (isset($_GET["action"]) && ($_GET["action"] =="store")){
                 $this->store($_POST);
@@ -50,10 +50,7 @@
              $customers = $customer->all();
              new View("customerList",["customer"=> $customers]);
         }
-  
-         
         
-             
         public function delete($id){
             $customerHelper = new Customers();
             $customer = $customerHelper->findById($id);

@@ -1,16 +1,14 @@
 <?php
 require_once("Components/Layout.php");
-require_once("Components/header/header_add.php");
+require_once("Components/header/header_app.php");
 ?>
 
     <body>
         
-    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a
+    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
         
 
-
-        <form action="?action=store" method="post" >
-        <input id="reset" class="btn btn-outline-dark" type="reset" value="reset" />
+    <form action="?action=store" method="post" >
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
             <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Name">
@@ -68,9 +66,9 @@ require_once("Components/header/header_add.php");
 
 
         </form>
-        
+       
 
-    
+
 
     <?php
     require_once("Components/footer/footer_add.php");

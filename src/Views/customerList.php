@@ -9,23 +9,20 @@
         require_once("Components/header/header.php");
        ?>
     <main>
+<div class="head_group">
+      <div class="head_btn_add">
+                  <div class="add">
+                    <a href="?action=create">
+                        <i class="bi bi-person-lines-fill icon_btn_add"></i>
+                        <button type="button" class="btn_add">ADD</button>
+                      </a>
+                  </div>
+                  
+      </div>
+      <img src="src/img/zyro-image 1.png" alt="image_add" class="d-inline-block align-text-top img_add">
+  </div>
 
-            <section class="">
-              <div class="add">
-              
-              <a href="?action=create">
-                <i class="bi bi-person-lines-fill"></i>
-                <button type="button" class="btn_add">ADD</button>
-              </a>
-            </div>
-
-        
-
-
-   </div>
-   <img> 
-
-  </section>
+</div>
         <?php 
                     foreach ($data ["customer"] as $customer){
 

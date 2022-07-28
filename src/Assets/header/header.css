@@ -1,3 +1,10 @@
+.image_header{
+border-radius: 50%;
+width: auto;
+height: 6rem;
+
+}
+
 
 .encabezado-1{
     width: 100%;
@@ -24,7 +31,7 @@ img {
     max-height: 100%;
    }
   .box{
-    height: 50px;
+    height: 70px;
     text-align-last: center;
   }
   .derechos{
