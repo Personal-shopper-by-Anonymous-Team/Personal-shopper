@@ -1,1 +1,0 @@
-<div class="footer_all" id="footer_list">Derechos Reservados por Anonymus Code.</div>

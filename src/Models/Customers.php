@@ -92,6 +92,24 @@
             public function destroy(){
                $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
             }
+            
+            public function rename($name, $age, $phone, $weight, $height, $shoes_size, $sex, $reason){
+               $this->name = $name;
+               $this->age = $age;
+               $this->phone = $phone;
+               $this->weight = $weight;
+               $this->height = $height;
+               $this->shoes_size = $shoes_size;
+               $this->sex = $sex;
+               $this->reason = $reason;
+            }
+            public function update(){
+               $this->database->mysql->query("UPDATE `{$this->table}` SET `name` = '{$this->name}', `age` = '{$this->age}',`phone` = '{$this->phone}',`weight` = '{$this->weight}',`height` = '{$this->height}',`shoes_size` = '{$this->shoes_size}',`sex` = '{$this->sex}', `reason` = '{$this->reason}' WHERE `ID` = {$this->id}");
+            }
+
+            public function save(){
+               $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `age`, `phone`, `weight`, `height`, `shoes_size`, `sex`, `reason`) VALUES ('$this->name', '$this->age', '$this->phone', '$this->weight', '$this->height', '$this->shoes_size', '$this->sex', '$this->reason');");
+            }
 
    }
 
