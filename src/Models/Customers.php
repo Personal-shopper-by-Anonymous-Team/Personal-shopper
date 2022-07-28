@@ -93,6 +93,10 @@
                $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
             }
 
+            public function save(){
+               $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `age`, `phone`, `weight`, `height`, `shoes_size`, `sex`, `reason`) VALUES ('$this->name', '$this->age', '$this->phone', '$this->weight', '$this->height', '$this->shoes_size', '$this->sex', '$this->reason');");
+            }
+
    }
 
 
