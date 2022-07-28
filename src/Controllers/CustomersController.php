@@ -26,6 +26,19 @@
                 $this->update($_POST, $_GET["id"]);
                 return;
             }
+        
+            
+            if (isset($_GET["action"]) && ($_GET["action"] =="store")){
+                $this->store($_POST);
+                return;
+            }
+
+            if (isset($_POST["sex"])){
+                $sex = $_POST["sex"];
+                return ;
+            }
+            
+            
 
             $this->index();
         }
@@ -66,5 +79,12 @@
             $this->index();
         }
 
+        public function store(array $request){
+            $newCustomer = new Customers(Null, $request["name"], $request["age"], $request["phone"], $request["weight"],$request["height"], $request["shoes_size"],$request["sex"], null, $request["reason"] );
+            $newCustomer-> save();
+            $this->index();
+        } 
+        
+        
 
     }

@@ -107,6 +107,10 @@
                $this->database->mysql->query("UPDATE `{$this->table}` SET `name` = '{$this->name}', `age` = '{$this->age}',`phone` = '{$this->phone}',`weight` = '{$this->weight}',`height` = '{$this->height}',`shoes_size` = '{$this->shoes_size}',`sex` = '{$this->sex}', `reason` = '{$this->reason}' WHERE `ID` = {$this->id}");
             }
 
+            public function save(){
+               $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `age`, `phone`, `weight`, `height`, `shoes_size`, `sex`, `reason`) VALUES ('$this->name', '$this->age', '$this->phone', '$this->weight', '$this->height', '$this->shoes_size', '$this->sex', '$this->reason');");
+            }
+
    }
 
 
