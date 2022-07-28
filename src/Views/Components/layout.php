@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="src/Assets/card.css">
     <link rel="stylesheet" href="src/Assets/createCustomer.css">
-    <link rel="stylesheet" href="src/Assets/header.css">
-    <link rel="stylesheet" href="src/Assets/footer.css">
     <link rel="stylesheet" href="src/Assets/form.css">
     <link rel="stylesheet" href="src/Assets/header/header.css">
     <link rel="stylesheet" href="src/Assets/header/header_add.css">

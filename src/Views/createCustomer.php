@@ -5,7 +5,7 @@ require_once("Components/header/header_app.php");
 
     <body>
         
-    <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
+    <a  id="reset" href="?action=create"><input   class="btn btn-primary" type="reset" value="Reset"></a>
         
 
     <form action="?action=store" method="post" >
