@@ -55,9 +55,11 @@ require_once("Components/header/header_add.php");
 
         <div class="justify-content-center">
             <input id="send" class="btn btn-outline-dark" type="submit" value="Create" />
-            <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="submit">Cancel</button>
+            <button onclick="window.location.href='/Personal-Shopper'" id="cancel" class="btn btn-outline-dark" type="button">Cancel</button>
+            
         </div>
 
+        
 
 
         </form>
