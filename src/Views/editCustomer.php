@@ -5,7 +5,6 @@ require_once("Components/header/header_edit.php");
 <body>
 
     <main>
-        <input class="btn-lg btn-outline-sucess go-add-task float"type="reset" value="Reset">
         <form class="justify-content-center" action='?action=update&id=<?php echo $data["customer"]->getId()?>'method="post">
             <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
