@@ -13,7 +13,6 @@ require_once("Components/header/header_edit.php");
             <h2>Edit Shopper</h2>
         </div>
         <form class="justify-content-center" action='?action=update&id=<?php echo $data["customer"]->getId()?>'method="post">
-        <a href="?action=create"><input class="btn btn-primary" type="reset" value="Reset"></a>
             <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
             <input class="form-control" type="text" name="name" required value='<?php echo $data["customer"]->getName() ?>'>
