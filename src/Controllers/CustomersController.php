@@ -17,7 +17,16 @@
             if (isset($_GET["action"]) && ($_GET["action"] =="create")){
                 $this->create();
                 return;
+            }    
+            if (isset($_GET["action"])&&($_GET["action"]=="edit")){
+                $this->edit($_GET["id"]);
+                return;
             }
+            if (isset($_GET["action"])&&($_GET["action"]=="update")){
+                $this->update($_POST, $_GET["id"]);
+                return;
+            }
+        
             
             if (isset($_GET["action"]) && ($_GET["action"] =="store")){
                 $this->store($_POST);
@@ -55,6 +64,19 @@
 
         public function create(){
             new View("createCustomer");
+        }
+        public function edit($id){
+            $customerHelper = new Customers();
+            $customer = $customerHelper ->findById($id);
+            new View("editCustomer",["customer"=>$customer]);
+        }
+        
+        public function update(array $request, $id){
+            $customerHelper = new Customers();
+            $customer = $customerHelper ->findById($id);
+            $customer->rename($request["name"], $request["age"], $request["phone"], $request["weight"], $request["height"], $request["shoes_size"], $request["sex"], $request["reason"]);
+            $customer->update();
+            $this->index();
         }
 
         public function store(array $request){
