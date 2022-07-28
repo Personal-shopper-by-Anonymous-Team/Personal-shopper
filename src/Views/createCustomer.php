@@ -1,6 +1,6 @@
 <?php
 require_once("Components/Layout.php");
-require_once("Components/header/header_add.php");
+require_once("Components/header/header_app.php");
 ?>
 
     <body>
@@ -10,7 +10,7 @@ require_once("Components/header/header_add.php");
 
 
         <form action="?action=store" method="post" >
-        <input id="reset" class="btn btn-outline-dark" type="reset" value="reset" />
+        
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
             <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Name">

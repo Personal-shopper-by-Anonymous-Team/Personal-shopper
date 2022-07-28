@@ -52,5 +52,5 @@ require_once("Components/header/header_edit.php");
 
 </body>
 <?php 
-    require_once("Component/footer/footer_edit.php");
+    require_once("Components/footer/footer_edit.php");
 ?>
