@@ -19,7 +19,7 @@
                   </div>
                   
       </div>
-      <img src="src/img/zyro-image 1.png" alt="image_add" class="d-inline-block align-text-top img_add">
+      <img src="src/img/image.png" alt="image_add" class="d-inline-block align-text-top img_add">
   </div>
 
 </div>
