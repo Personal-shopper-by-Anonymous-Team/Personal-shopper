@@ -4,8 +4,13 @@ require_once("Components/Header.php");
 ?>
 
     <body>
+        
+    <input id="reset" class="btn btn-outline-dark" type="reset" value="reset" />
+        
+
 
         <form action="?action=store" method="post" >
+        <input id="reset" class="btn btn-outline-dark" type="reset" value="reset" />
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Name</label>
             <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Name">
