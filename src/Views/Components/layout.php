@@ -9,5 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="src/Assets/card.css">
     <link rel="stylesheet" href="src/Assets/createCustomer.css">
-    <link rel="stylesheet" href="src/Assets/header.css">
+    <link rel="stylesheet" href="src/Assets/header/header.css">
+    <link rel="stylesheet" href="src/Assets/header/header_add.css">
+    <link rel="stylesheet" href="src/Assets/header/header_edit.css">
+    <link rel="stylesheet" href="src/Assets/footer/footer.css">
+    <link rel="stylesheet" href="src/Assets/footer/footer_add.css">
+    <link rel="stylesheet" href="src/Assets/footer/footer_edit.css">
+
 </head>

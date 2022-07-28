@@ -1,5 +1,6 @@
 <?php
-require_once("Components/Layout.php")
+require_once("Components/Layout.php");
+require_once("Components/header/header_edit.php");
 ?>
 <body>
 <div class="edit row justify-content-center">
@@ -50,5 +51,6 @@ require_once("Components/Layout.php")
 
 
 </body>
-<?php
+<?php 
+    require_once("Component/footer/footer_edit.php");
 ?>
