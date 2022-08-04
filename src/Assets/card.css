@@ -1,9 +1,15 @@
-.container_cards{
+
+ @media (min-width: 820px) {
+    
+    .container_cards{
         display: flex;
         flex-direction:column;
         justify-content: center;
         align-items: center;       
  }
+
+}
+
 
 .card_principal{
    display: flex;
@@ -76,15 +82,11 @@ border-radius: 10px;
     align-items: center;
  }
 
-
 .add{
     display:flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     margin-top: 2rem;
-
-   
-
 }
 .icon_create{
     height: 10rem;

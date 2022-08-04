@@ -47,7 +47,7 @@
         public function index(){
              $customer = new Customers();
 
-             $customers = $customer->all();
+        $customers = $customer->all();
              new View("customerList",["customer"=> $customers]);
         }
         
